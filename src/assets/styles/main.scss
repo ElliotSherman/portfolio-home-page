@@ -11,7 +11,6 @@
 @import "basics/links";
 @import "basics/forms";
 
-
 // Views
 @import "views/about-us";
 @import "views/home-page";
@@ -19,6 +18,7 @@
 @import "views/review-app";
 
 // Components
-@import "cmps/app-header";
-@import "cmps/app-footer";
+@import "cmps/app-header-landing";
+@import "cmps/app-footer-landing";
+@import "cmps/hero";
 @import "cmps/user-msg";
