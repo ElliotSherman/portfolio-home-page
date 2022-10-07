@@ -1,0 +1,13 @@
+.nav-list {
+  .nav-links-container {
+    font-size: rem(18px);
+    margin-inline-start: auto;
+    gap: rem(32px);
+    color: white;
+    text-transform: uppercase;
+    font-family: azeret;
+    .link {
+      @include nav-link;
+    }
+  }
+}

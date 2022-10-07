@@ -1,8 +1,13 @@
-.app-footer-landing{
-    background-color: #111;
-    color: $clr4;
-    padding: 20px;
-    margin-top: auto;
-    width: 100%;
-    text-align: center;
+.app-footer-landing {
+  background: $footer-gradient;
+  padding-bottom: 40px;
+  color: $clr4;
+  margin-top: auto;
+  .social-links {
+    justify-content: flex-end;
+    gap: rem(34px);
+    .social-link {
+      @include nav-link;
+    }
+  }
 }

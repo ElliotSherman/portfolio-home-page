@@ -57,6 +57,12 @@
   }
 }
 
+@mixin nav-link {
+  transition: box-shadow ease-in-out 0.3s;
+  &:hover {
+    box-shadow: 0 6px 0px 0px #ffffff;
+  }
+}
 // Mixin for removing hover efects on iphone screen
 @mixin hover-supported {
   @media not all and (pointer: coarse) {

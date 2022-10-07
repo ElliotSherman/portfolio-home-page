@@ -1,11 +1,22 @@
 // Colors
 $clr1: #ce2e6c;
-$clr2: #4f3a65;
+$clr2: #991DB3;
 $clr3: #574f7d;
 $clr4: #95adbe;
 $clr5: #dff0ea;
 $clr6: #fff;
 $clr7: #222;
+$header-gradient: linear-gradient(
+  180deg,
+  rgba(153, 29, 179, 1) 45%,
+  rgba(188, 29, 253, 0) 100%
+);
+
+$footer-gradient: linear-gradient(
+  0deg,
+  rgba(101, 112, 207, 1) 0%,
+  rgba(101, 112, 207, 0) 100%
+);
 
 // Breakpoints
 $mobile-breakpoint: 460px;
@@ -13,3 +24,14 @@ $narrow-breakpoint: 720px;
 $tablet-breakpoint: 900px;
 $normal-breakpoint: 1260px;
 $desktop-breakpoint: 1400px;
+
+// fonts
+@font-face {
+  font-family: azeret;
+  src: url(../../fonts/Azeret_Mono/static/AzeretMono-Medium.ttf);
+} ;
+
+@font-face {
+  font-family: azeret-light;
+  src: url(../../fonts/Azeret_Mono/static/AzeretMono-Light.ttf);
+} ;

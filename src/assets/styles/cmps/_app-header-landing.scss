@@ -1,24 +1,4 @@
 .app-header-landing {
-  background-color: $clr4;
-  padding: 10px;
-  nav {
-    font-size: 0.8em;
-    background-color: $clr5;
-    padding: 5px;
-    width: 100%;
-  }
-
-  nav a:first-child {
-    margin-right: 30px;
-  }
-
-  nav a:not(:first-child) {
-    border-top: 1px solid $clr1;
-    padding: 0 5px;
-    margin: 10px;
-  }
-
-  nav .active {
-    color: $clr1;
-  }
+  background: $header-gradient;
+  padding-top: 40px;
 }

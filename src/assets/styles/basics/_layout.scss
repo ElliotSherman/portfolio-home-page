@@ -39,6 +39,12 @@
       minmax(auto, $desktop-breakpoint)
       minmax(20px, 1fr);
   }
+  //   @include for-wide-layout {
+  //     grid-template-columns:
+  //       minmax(20px, 1fr)
+  //       minmax(auto, $wide-breakpoint)
+  //       minmax(20px, 1fr);
+  //   }
 }
 .card-grid {
   display: grid;

@@ -1,6 +1,47 @@
 .hero {
   color: aqua;
-  h4 {
-    font-size: rem(60px);
+  height: calc(100vh - 173.39px);
+  line-height: normal;
+  white-space: nowrap;
+  width: calc(148.8px + 296.41px);
+  .intro {
+    color: $clr6;
+    text-transform: capitalize;
+    font-family: azeret;
+    font-size: rem(72px);
+    margin-bottom: rem(32px);
+    .welcome {
+      font-family: azeret-light;
+      text-transform: uppercase;
+      font-size: rem(24px);
+      text-shadow: 2px 1px 13px rgba(32, 43, 200, 0.6);
+    }
+  }
+  .description {
+    color: $clr2;
+    font-size: rem(72px);
+    text-transform: uppercase;
+    font-family: azeret-light;
+    text-shadow: 2px 1px 13px rgba(32, 43, 200, 0.6);
+  }
+  .cta-btn {
+    background-image: linear-gradient(
+      to right,
+      #1fa2ff 0%,
+      #12d8fa 51%,
+      #1fa2ff 100%
+    );
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    border-radius: 10px;
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
