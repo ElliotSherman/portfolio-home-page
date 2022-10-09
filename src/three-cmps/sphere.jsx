@@ -1,8 +1,8 @@
-export default function Sphere() {
+export function Sphere() {
   return (
     <mesh position={[0, 0, 0]}>
-      <sphereBufferGeometry attach="geometry" args={[1, 16, 16]} />
-      <meshNormalMaterial />
+      <boxGeometry args={[2, 2, 2]} />
+      <meshPhongMaterial color={"blue"} />
     </mesh>
   )
 }
