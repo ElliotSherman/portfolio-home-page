@@ -1,6 +1,6 @@
+
 import { useFrame } from "@react-three/fiber"
 import { useRef } from "react"
-
 export function PlanetRing() {
   const planetRing = useRef(null)
   useFrame(() => {

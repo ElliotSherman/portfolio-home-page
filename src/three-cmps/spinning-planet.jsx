@@ -1,5 +1,6 @@
 import { useFrame } from "@react-three/fiber"
-import { useRef } from "react"
+import { Suspense, useRef } from "react"
+import { useTexture } from "@react-three/drei"
 export function SpinningPlanet() {
   const planet = useRef(null)
   useFrame(() => {
@@ -13,7 +14,7 @@ export function SpinningPlanet() {
       rotation={[-0.3, 0, 0]}
     >
       <sphereGeometry args={[2]} />
-      <meshStandardMaterial color={"blue"} />
+      <meshStandardMaterial color={"blue"} map={map} />
     </mesh>
   )
 }

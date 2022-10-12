@@ -5,7 +5,7 @@ import { Canvas } from "@react-three/fiber"
 import { useRef } from "react"
 import { TwoPiecePlanet } from "./three-cmps/two-piece-planet"
 import { Stars, OrbitControls } from "@react-three/drei"
-
+import { Suspense } from "react"
 function App() {
   const ref = useRef()
 
@@ -36,7 +36,7 @@ function App() {
             fade
             speed={1.1}
           />
-          {/* <ambientLight intensity={0.5} /> */}
+          <ambientLight intensity={0.5} />
           <directionalLight
             ref={ref}
             intensity={0.6}
