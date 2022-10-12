@@ -14,7 +14,7 @@ export function SpinningPlanet() {
       rotation={[-0.3, 0, 0]}
     >
       <sphereGeometry args={[2]} />
-      <meshStandardMaterial color={"blue"} map={map} />
+      <meshStandardMaterial color={"blue"} />
     </mesh>
   )
 }
