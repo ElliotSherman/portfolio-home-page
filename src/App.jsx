@@ -3,9 +3,8 @@ import AppHeaderLanding from "./cmps/app_header"
 import Hero from "./cmps/hero"
 import { Canvas } from "@react-three/fiber"
 import { useRef } from "react"
-import { Sphere } from "./three-cmps/sphere"
-import { CamOrbitController } from "./three-cmps/cam-orbit-controls"
-import { Stars } from "@react-three/drei"
+import { TwoPiecePlanet } from "./three-cmps/two-piece-planet"
+import { Stars, OrbitControls } from "@react-three/drei"
 
 function App() {
   const ref = useRef()
@@ -16,18 +15,17 @@ function App() {
       <div
         id="canvas-container"
         style={{
-          height: "100vh",
+          height: "100%",
+          width: "100%",
           backgroundColor: "black",
           position: "absolute",
-          width: "100%",
         }}
       >
         <Canvas
-          // shadowMap
-          camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 5] }}
+          camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0.5, 5] }}
         >
+          <OrbitControls />
           <axesHelper visible={true} args={[3]} />
-          <CamOrbitController />
           <ambientLight intensity={0.1} />
           <Stars
             radius={100}
@@ -48,9 +46,8 @@ function App() {
             castShadow
             color={"#fff"}
           />
-          <Sphere />
+          <TwoPiecePlanet />
         </Canvas>
-        {/* <gridHelper /> */}
       </div>
       <Hero />
       <AppFooterLanding />
