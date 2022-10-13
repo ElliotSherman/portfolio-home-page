@@ -35,7 +35,6 @@ function App() {
             fade
             speed={1.1}
           />
-          {/* <ambientLight intensity={0.5} /> */}
           <directionalLight
             ref={ref}
             intensity={1}
