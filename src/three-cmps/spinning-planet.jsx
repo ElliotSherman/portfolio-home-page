@@ -7,6 +7,7 @@ export function SpinningPlanet({ scale, texture, size, rotationSpeed }) {
     planet.current.rotation.y += rotationSpeed
   })
   //   const colorMap = useTexture("textures/2k_saturn.jpg")
+  //   const colorMap = useTexture("textures/2k_saturn.jpg")
   const colorMap = useTexture(texture)
   return (
     <mesh

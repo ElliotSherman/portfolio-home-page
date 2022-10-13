@@ -8,7 +8,7 @@ export function TwoPiecePlanet() {
       <SpinningPlanet
         size={[2]}
         scale={[1, 1, 1]}
-        texture={"textures/2k_earth_daymap.jpg"}
+        texture={"/textures/2k_earth_daymap.jpg"}
         rotationSpeed={0.0075}
       />
       {/* <SpinningPlanet
