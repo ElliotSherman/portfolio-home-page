@@ -5,7 +5,6 @@ import { Canvas } from "@react-three/fiber"
 import { useRef } from "react"
 import { TwoPiecePlanet } from "./three-cmps/two-piece-planet"
 import { Stars, OrbitControls } from "@react-three/drei"
-import { Suspense } from "react"
 function App() {
   const ref = useRef()
 
@@ -25,7 +24,7 @@ function App() {
           camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0.5, 5] }}
         >
           <OrbitControls />
-          <axesHelper visible={true} args={[3]} />
+          {/* <axesHelper visible={true} args={[3]} /> */}
           <ambientLight intensity={0.1} />
           <Stars
             radius={100}
@@ -36,13 +35,11 @@ function App() {
             fade
             speed={1.1}
           />
-          <ambientLight intensity={0.5} />
+          {/* <ambientLight intensity={0.5} /> */}
           <directionalLight
             ref={ref}
-            intensity={0.6}
-            position={[0, 2, 2]}
-            shadow-mapSize-width={2048}
-            shadow-mapSize-height={2048}
+            intensity={1}
+            position={[-40, 20, -20]}
             castShadow
             color={"#fff"}
           />
