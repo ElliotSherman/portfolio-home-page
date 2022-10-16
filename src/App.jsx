@@ -7,7 +7,6 @@ import { TwoPiecePlanet } from "./three-cmps/two-piece-planet"
 import { Stars, OrbitControls } from "@react-three/drei"
 function App() {
   const ref = useRef()
-
   return (
     <div className="main-container">
       <AppHeaderLanding />
